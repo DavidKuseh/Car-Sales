@@ -1,9 +1,9 @@
 import * as types from './actionTypes';
 
-export function addFeature() {
-    return { type: types.ADD_FEATURE };
+export function addFeature(feature) {
+    return { type: types.ADD_FEATURE, payload: feature };
 }
 
-export function removeFeature() {
-    return { type: types.REMOVE_FEATURE };
+export function removeFeature(feature) {
+    return { type: types.REMOVE_FEATURE, payload: feature };
 }
